@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear Mind Coffee | Clean Energy, Better Mornings</title>
+    <meta
+      name="description"
+      content="Premium coffee blends designed for steady focus, clean energy, and better morning rituals."
+    />
+    <meta property="og:title" content="Clear Mind Coffee" />
+    <meta
+      property="og:description"
+      content="Clean, focused coffee without the crash. Choose your blend and subscribe for better energy."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Clear Mind Coffee home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Clear Mind Coffee</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Open menu</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-navigation" data-nav>
+        <a href="#story">Story</a>
+        <a href="#product">Blends</a>
+        <a href="#subscribe">Subscribe</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="cart-button" type="button" data-open-cart aria-label="Open cart">
+        Cart
+        <span data-cart-count>0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/morning-ritual.jpg" alt="" />
+        </div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Clean energy coffee</p>
+          <h1>Clear Mind. Clean Energy.</h1>
+          <p>
+            A smoother morning ritual for focused work, calm momentum, and energy that does not
+            disappear before lunch.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#subscribe">Build your subscription</a>
+            <a class="button secondary" href="#product">Shop blends</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem band warm" id="story">
+        <div class="section-intro reveal">
+          <p class="eyebrow">The problem</p>
+          <h2>Coffee should wake you up without winding you up.</h2>
+          <p>
+            Clear Mind Coffee is built around balanced flavor, intentional caffeine levels, and a
+            ritual that fits real mornings.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true">01</span>
+            <h3>No Jitters</h3>
+            <p>A steadier cup designed to feel focused, not frantic.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true">02</span>
+            <h3>No Crash</h3>
+            <p>Carefully roasted blends for a smoother lift and a cleaner finish.</p>
+          </article>
+          <article class="feature reveal">
+            <span class="feature-icon" aria-hidden="true">03</span>
+            <h3>No Guesswork</h3>
+            <p>Choose your ritual, delivery cadence, and grind. We handle the rest.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="manifesto band light">
+        <div class="manifesto-copy reveal">
+          <p class="eyebrow">Our promise</p>
+          <h2>Energy should feel better.</h2>
+          <p>
+            No crash. No compromise. Just a carefully made cup that helps you move through the day
+            with clarity.
+          </p>
+        </div>
+        <div class="stats reveal" aria-label="Clear Mind Coffee product highlights">
+          <div>
+            <strong>3</strong>
+            <span>signature blends</span>
+          </div>
+          <div>
+            <strong>48h</strong>
+            <span>fresh roast shipping window</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>recyclable mailers</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="feeling">
+        <p class="eyebrow reveal">How it feels</p>
+        <div class="word-stack reveal">
+          <span>Focused.</span>
+          <span>Balanced.</span>
+          <span>In control.</span>
+        </div>
+      </section>
+
+      <section class="products band warm" id="product">
+        <div class="section-intro reveal">
+          <p class="eyebrow">The collection</p>
+          <h2>Three blends. One better ritual.</h2>
+          <p>Pick a bag once, or subscribe for fresh coffee on your schedule.</p>
+        </div>
+
+        <div class="product-grid" data-products></div>
+      </section>
+
+      <section class="subscribe band deep" id="subscribe">
+        <div class="subscribe-copy reveal">
+          <p class="eyebrow">Subscribe</p>
+          <h2>Never run out of better energy.</h2>
+          <p>
+            Build a recurring delivery in under a minute. Choose your blend, grind, and cadence.
+            Cancel any time.
+          </p>
+        </div>
+
+        <form class="subscription-panel reveal" data-subscribe-form>
+          <label>
+            Blend
+            <select name="blend" required>
+              <option value="Morning Ritual">Morning Ritual</option>
+              <option value="Deep Focus">Deep Focus</option>
+              <option value="Evening Calm">Evening Calm</option>
+            </select>
+          </label>
+
+          <label>
+            Grind
+            <select name="grind" required>
+              <option value="Whole bean">Whole bean</option>
+              <option value="Ground">Ground</option>
+              <option value="Espresso">Espresso</option>
+            </select>
+          </label>
+
+          <label>
+            Delivery
+            <select name="cadence" required>
+              <option value="Every 2 weeks">Every 2 weeks</option>
+              <option value="Every month">Every month</option>
+              <option value="Every 6 weeks">Every 6 weeks</option>
+            </select>
+          </label>
+
+          <button class="button primary full" type="submit">Add subscription to cart</button>
+          <p class="form-note" data-subscribe-status role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="contact band light" id="contact">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Questions</p>
+          <h2>Tell us what you are building your morning around.</h2>
+          <p>
+            Use this form for wholesale, events, collaborations, or anything a real coffee person
+            should answer.
+          </p>
+        </div>
+
+        <div class="contact-forms reveal">
+          <form class="contact-form" data-contact-form>
+            <label>
+              Name
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="button dark" type="submit">Send message</button>
+            <p class="form-note" data-contact-status role="status" aria-live="polite"></p>
+          </form>
+
+          <form class="contact-form flavor-form" data-flavor-updates-form>
+            <h3>Flavor updates</h3>
+            <p>Get notes when new blends launch or favorites come back in stock.</p>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              Favorite blend
+              <select name="favoriteBlend">
+                <option value="All blends">All blends</option>
+                <option value="Morning Ritual">Morning Ritual</option>
+                <option value="Deep Focus">Deep Focus</option>
+                <option value="Evening Calm">Evening Calm</option>
+              </select>
+            </label>
+            <button class="button dark" type="submit">Join updates</button>
+            <p class="form-note" data-flavor-updates-status role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Clear Mind Coffee</span>
+        </a>
+        <p>Clean ingredients. Clear thinking. Better mornings.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="#story">Our Story</a>
+        <a href="#product">Products</a>
+        <a href="#subscribe">Subscribe</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="copyright">© 2026 Clear Mind Coffee. All rights reserved.</p>
+    </footer>
+
+    <aside class="cart-drawer" data-cart-drawer aria-hidden="true">
+      <div class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+        <div class="cart-head">
+          <h2 id="cart-title">Your cart</h2>
+          <button type="button" class="icon-button" data-close-cart aria-label="Close cart">×</button>
+        </div>
+        <div class="cart-items" data-cart-items></div>
+        <div class="cart-total">
+          <span>Total</span>
+          <strong data-cart-total>$0.00</strong>
+        </div>
+        <button class="button primary full" type="button" data-checkout>Checkout</button>
+        <p class="form-note" data-checkout-status role="status" aria-live="polite"></p>
+      </div>
+    </aside>
+
+    <script src="src/products.js"></script>
+    <script src="src/cart.js"></script>
+    <script src="src/backend.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
